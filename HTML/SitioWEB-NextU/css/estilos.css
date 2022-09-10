@@ -1,0 +1,279 @@
+@import './variables.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.lugares{
+  display: grid;
+}
+
+p{
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+h2, h3{
+  font-family: var(--fuente-titulos);
+  margin-bottom: 2vh;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-header);
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+header h1{
+  font-family: var(--fuente-titulos);
+  color: white;
+}
+
+ul, li , a{
+  display: inline-flex;
+  gap: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover{
+  color:  rgba(255, 166, 0, 0.582);
+}
+
+
+.principal {    
+  display: flex;  
+  flex-flow: column nowrap;
+  align-items: center; 
+
+  background: url(../images/inicial2.JPG);
+  background-size: 1400px;
+  height: 30vh;
+  overflow: hidden;
+}
+
+ .contenido{
+  background-color: rgba(240, 233, 141, 0.3) ;
+  width: 80%;
+  max-width: 450px;
+  border-radius: 15px;  
+  padding: 10px;
+  margin-top: 20px;
+  font-weight: 700;
+}
+
+.playa{
+  background-color: var(--color-seccion-playa)
+}
+
+.parque{
+  background-color: var(--color-seccion-parque);
+}
+
+.rio{
+  background-color: var(--color-seccion-rio);
+}
+
+
+img{
+  width: 80vw;  
+  border-radius: 10px;
+  margin-top: 2vh;
+  margin-bottom: 1vh;
+  -webkit-filter: saturate(60%);
+  filter: saturate(60%);
+}
+
+img:hover{
+  -webkit-filter: saturate(120%);
+  filter: saturate(120%);
+  transform: scale(1.1);
+  transition: 600ms;
+}
+
+.imagen-principal img{
+  display: none;
+}
+
+address + div{
+  margin-top: 3vh;   
+}
+
+.informacion{
+  padding: 3vh;
+}
+
+.contacto{
+  width: 85%;  
+  margin: auto;
+  margin-bottom: 1vh;
+  background-color: rgba(246, 250, 207, 0.61);
+  border: 1px solid rgba(255, 166, 0, 0.582);
+  border-radius: 10px;
+  padding: 5%;
+}
+
+input{
+  border: 1px solid rgba(255, 166, 0, 0.582);
+  width:90%
+}
+
+textarea{
+  border: 1px solid rgba(255, 166, 0, 0.582);
+  width:90%
+}
+
+button{
+  height: 32px;
+  width: 60px; 
+  border-radius: 10px;
+  background-color: rgba(255, 166, 0, 0.582);
+  margin-top: 15px;
+}
+
+button:hover{
+  background-color: var(--color-header);
+  color: white;
+}
+
+
+@media (min-width: 600px) {
+  
+  header {
+    flex-flow: row nowrap;
+    gap: 20px
+  }
+  
+  .playa, .parque, .rio{
+    display: grid;
+    grid-template-columns: 50% auto;
+  }
+
+  .descripcion{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding: 10px 20px;
+  }
+
+  .descripcion h2{
+    font-size: 52px;
+  }
+  
+  .imagen-secundaria img{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width: 80%;
+  }  
+
+
+  footer {
+    display: grid;
+    grid-template-columns: 50% auto;    
+    margin-top: 20px;
+  }
+
+  .informacion{
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .contacto{
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  
+}
+
+@media (min-width: 821px) {
+  
+  header {
+    justify-content: left;
+    padding-left: 20px;
+  }  
+
+  .principal {    
+    background-size: cover;
+  }
+
+  .contenido{
+    background-color: rgba(240, 233, 141, 0.5);    
+  }
+  
+  .playa, .parque, .rio{
+    display: grid;
+    grid-template-columns: 33% auto 33%;
+  }
+
+  .descripcion{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding: 10px 20px;
+  }
+
+  .descripcion h2{
+    font-size: 52px;
+  }
+  
+  .imagen-principal img{
+    display:block;    
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: 80%;
+    margin-left: 40px;
+  }
+
+  .imagen-secundaria img{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    width: 80%;
+  }  
+
+
+  footer {
+    display: grid;
+    grid-template-columns: 50% auto;    
+    margin-top: 20px;
+  }
+
+  .informacion{
+    grid-column-start: 1;
+    grid-column-end: 2;    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    
+  }
+  
+  address {
+    text-align: left;
+  }
+  
+  .tel {
+    text-align: left;
+  }
+
+  .tel h3{
+    text-align: left;
+    margin-left: 0;
+  }
+
+  .contacto{
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  
+
+  
+
+}
+

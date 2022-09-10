@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Artículo 1</h1>
+    <p id="c1"></p>
+    <p id="n1"></p>
+    <p id="p1"></p>
+    <h1>Artículo 2</h1>
+    <p id="c2"></p>
+    <p id="n2"></p>
+    <p id="p2"></p>
+    <h1>Artículo 3</h1>
+    <p id="c3"></p>
+    <p id="n3"></p>
+    <p id="p3"></p>
+</body>
+
+<script>
+    var articulo1 = {
+        codigo: "0001",
+        nombre: "Gorra",
+        precio: 15000       
+    };
+
+    var articulo2 = new Object();
+        articulo2.codigo = "0002";
+        articulo2.nombre = "Camiseta";
+        articulo2.precio = 40000;
+
+    function articulo3(codigo, nombre, precio){
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.precio = precio;
+    }
+
+    var articulo3 = new articulo3("0003", "Pantaloneta", 30000);
+    
+    document.getElementById("c1").innerHTML = articulo1.codigo;
+    document.getElementById("n1").innerHTML = articulo1.nombre;
+    document.getElementById("p1").innerHTML = articulo1.precio;
+
+    document.getElementById("c2").innerHTML = articulo2.codigo;
+    document.getElementById("n2").innerHTML = articulo2.nombre;
+    document.getElementById("p2").innerHTML = articulo2.precio;
+
+    document.getElementById("c3").innerHTML = articulo3.codigo;
+    document.getElementById("n3").innerHTML = articulo3.nombre;
+    document.getElementById("p3").innerHTML = articulo3.precio;
+
+    
+
+</script>
+
+</html>

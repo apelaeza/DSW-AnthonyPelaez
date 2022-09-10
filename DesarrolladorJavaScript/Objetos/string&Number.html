@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    numero: <p id="numero"></p>
+    REsultado: <p id="resultado"></p>
+
+    numero: <p id="numero2"></p>
+    REsultado: <p id="resultado2"></p>
+
+
+</body>
+
+<script>
+
+var frase = "TODOS DESEAMOS LLEGAR A VIEJOS Y TODOS NEGAMOS QUE HEMOS LLEGADO";
+
+function letraCapital(frase){
+    // var palabras = [];
+    var palabras = frase.split(" ");
+    var nuevaFrase = palabras.map(palabra => {
+        return palabra.charAt(0).toUpperCase() + palabra.slice(1).toLowerCase();
+    });
+    return nuevaFrase.join(" ");
+}
+
+document.getElementById("resultado").innerHTML = letraCapital(frase);
+ 
+</script>
+</html>document.getElementById("resultado").innerHTML = num5.toFixed(2);document.getElementById("resultado").innerHTML = num5.toFixed(2);document.getElementById("resultado").innerHTML = num5.toFixed(2);
+
+
+ 

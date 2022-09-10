@@ -1,0 +1,70 @@
+body{
+background : white;
+
+}
+
+section{
+    padding-top: 30px;
+    padding-left: 30px;    
+    text-align: justify;
+    margin: auto;
+}
+footer{
+    text-align: center;
+}
+.titulo{
+    text-align: center;    
+    color : #005883;
+}
+
+.fondoAzul {
+    color :  #005883;
+}
+
+.fuenteUNAD {
+    font-family: 'Franklin Gothic Medium';
+}
+
+.menu{
+    background-color:  #F0B429;    
+    text-align: center;    
+    width: 100%;
+    font-size: larger;
+}
+
+h1,h2,h3{
+    color: #005883;      
+}
+
+h1{
+    font-size: 200%;
+}
+
+img.pequeña{
+    width: 4%; height: 4%;
+  }
+
+img.mediana{
+    width: 20%; height: 20%;
+  }
+
+
+  p{
+      padding-left: 30px;
+  }
+
+  .contenido{
+      width: 60%;
+      padding: 30px;
+  }
+
+  .tabla{
+      width: 90%;
+      margin: auto;          
+  }
+
+  .submenu{
+      padding-top: 30px;
+      text-align: center;
+      vertical-align: top;
+  }

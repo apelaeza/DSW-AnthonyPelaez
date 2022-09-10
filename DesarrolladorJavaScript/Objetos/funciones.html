@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Funciones</h1>
+        <h2>Resultado Función Suma</h2>
+
+        <p id="resultadoSuma"></p>
+
+        <h2>Resultado Función Resta</h2>
+
+        <p id="resultadoResta"></p>
+
+        <h2>Resultado Función Multiplicación</h2>
+
+        <p id="resultadoMultiplicacion"></p>
+
+        <h2>Resultado Función División</h2>
+
+        <p id="resultadoDivision"></p>
+    
+</body>
+
+<script>
+
+    function suma(x, y){
+        return x + y;
+    }
+
+    function resta(x, y){
+        return x - y;
+    }
+
+    function multiplicar(x, y){
+        return x * y;
+    }
+
+    function dividir(x, y){
+        return x / y;
+    }
+
+    var resultadoSuma = suma(100,200);
+    var resultadoResta = resta(2000, 500);
+    var resultadoMultiplicacion = multiplicar(7, 7);
+    var resultadoDivision = dividir(144, 12);
+
+    document.getElementById("resultadoSuma").innerHTML = resultadoSuma;
+    document.getElementById("resultadoResta").innerHTML = resultadoResta;
+    document.getElementById("resultadoMultiplicacion").innerHTML = resultadoMultiplicacion;
+    document.getElementById("resultadoDivision").innerHTML = resultadoDivision;
+
+</script>
+</html>
