@@ -1,15 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>Título</h1>    
 
-    <h2>otrer title </h2>
-    
+<body>
+    <main>
+        <section class="board">
+            <h1>Juego de Memoria</h1>
+            <div class="infopanel">
+                <h3 class="controls" id="successes">Aciertos: 0</h3>
+                <h3 class="controls" id="turns">Movimientos: 0</h3>
+            </div>
+            <table>
+                <tr>
+                    <td><button id="card0" onclick="flip(0)"></button></td>
+                    <td><button id="card1" onclick="flip(1)"></button></td>
+                    <td><button id="card2" onclick="flip(2)"></button></td>
+                    <td><button id="card3" onclick="flip(3)"></button></td>
+                </tr>
+                <tr>
+                    <td><button id="card4" onclick="flip(4)"></button></td>
+                    <td><button id="card5" onclick="flip(5)"></button></td>
+                    <td><button id="card6" onclick="flip(6)"></button></td>
+                    <td><button id="card7" onclick="flip(7)"></button></td>
+                </tr>
+                <tr>
+                    <td><button id="card8" onclick="flip(8)"></button></td>
+                    <td><button id="card9" onclick="flip(9)"></button></td>
+                    <td><button id="card10" onclick="flip(10)"></button></td>
+                    <td><button id="card11" onclick="flip(11)"></button></td>
+                </tr>
+                <tr>
+                    <td><button id="card12" onclick="flip(12)"></button></td>
+                    <td><button id="card13" onclick="flip(13)"></button></td>
+                    <td><button id="card14" onclick="flip(14)"></button></td>
+                    <td><button id="card15" onclick="flip(15)"></button></td>
+                </tr>
+            </table>
+            <div class="reset" id="reset" style="text-align: center;" onclick="reset()">
+                <h3>Volver a jugar</h3>
+            </div>
+        </section>
+        <section class="timerContainer" id="timerContainer">
+            <div class="counterCircleOff" id="counterCircle"></div>
+            <h2 class="time" id="time"></h2>
+        </section>
+
+        <section class="alert" id="alert">
+            <div id="alertText"></div>
+        </section>
+
+    </main>
+    <footer>
+        Juego programado por 👨‍💻 Anthony Peláez
+    </footer>
+    <script src="main.js"></script>
 </body>
+
 </html>
