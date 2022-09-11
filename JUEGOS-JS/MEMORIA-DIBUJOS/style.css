@@ -54,6 +54,11 @@ button:hover {
     cursor: pointer;
 }
 
+button img{
+    width:80%;
+    height:80%;
+    vertical-align: middle;
+}
 .reset {
     margin-top: 10px;    
     background-color: rgba(255, 255, 255, 0.3);

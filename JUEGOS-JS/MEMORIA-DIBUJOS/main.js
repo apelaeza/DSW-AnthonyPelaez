@@ -12,6 +12,14 @@ let timeLimit = 30;
 let time = timeLimit;
 let interval = null;
 
+//audios
+
+let clickAudio = new Audio('./sounds/click.wav');
+let loseAudio = new Audio('./sounds/lose.wav');
+let successAudio = new Audio('./sounds/success.wav');
+let winAudio = new Audio('./sounds/win.wav');
+let wrongAudio = new Audio('./sounds/wrong.wav');
+
 //Elementos DOM
 
 let successesId = document.getElementById("successes");
@@ -52,13 +60,14 @@ function flip(id) {
 
     if (flippedCards == 1) {
         card1 = document.getElementById("card" + id);
-        card1.innerHTML = numbers[id];
+        card1.innerHTML = `<img src="./images/${numbers[id]}.png">`
         card1.disabled = true;
         result1 = numbers[id];
+        clickAudio.play();
 
     } else if (flippedCards == 2) {
         card2 = document.getElementById("card" + id);
-        card2.innerHTML = numbers[id]
+        card2.innerHTML = `<img src="./images/${numbers[id]}.png">`
         card2.disabled = true;
         result2 = numbers[id];
         //Incrementar movimientos
@@ -70,6 +79,7 @@ function flip(id) {
             flippedCards = 0
             successes++;
             successesId.innerHTML = `Aciertos: ${successes}`;
+            successAudio.play();
 
             if (successes == 8) {
                 clearInterval(interval);
@@ -78,10 +88,12 @@ function flip(id) {
                 alertBanner.style.display = "inline";
                 alertText.innerHTML = `<h1>🥳️¡HAS GANADO!🥳️</h1><p>Lo lograste en ${turns} movimientos ✌️ y en ${time} segundos ✌️</p>`
                 document.getElementById("reset").style.display = "inline";
+                winAudio.play();
             }
 
         } else {
             flippedCards = 0;
+            wrongAudio.play();
             setTimeout(() => {
                 card1.innerHTML = '';
                 card2.innerHTML = '';
@@ -111,6 +123,7 @@ function countTime() {
             timeId.innerHTML = time
         };
         if (time == 0) {
+            loseAudio.play();
             clearInterval(interval);
             disableCards();
             counterCircle.classList.remove("counterCircleOn");
@@ -127,7 +140,7 @@ function countTime() {
 function disableCards() {
     for (let i = 0; i < numbers.length; i++) {
         let card = document.getElementById("card" + i);
-        card.innerHTML = numbers[i];
+        card.innerHTM = `<img src="./images/${numbers[i]}.png">`;
         card.disabled = true;
     }
 }
