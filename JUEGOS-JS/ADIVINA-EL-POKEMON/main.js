@@ -1,5 +1,5 @@
 //variables
-const CARDS = 5;
+const CARDS = 8 ;
 let pokemons = [];
 let pokemonsNames = [];
 let draggablePokemons = document.querySelector('.draggable-pokemons');
