@@ -86,7 +86,7 @@ function flip(id) {
                 successesId.innerHTML = `Aciertos: ${successes} 🤩`;
                 timerContainer.style.display = "none";
                 alertBanner.style.display = "inline";
-                alertText.innerHTML = `<h1>🥳️¡HAS GANADO!🥳️</h1><p>Lo lograste en ${turns} movimientos ✌️ y en ${time} segundos ✌️</p>`
+                alertText.innerHTML = `<h1>🥳️¡HAS GANADO!🥳️</h1><p>Lo lograste en ${turns} movimientos ✌️ y en ${timeLimit-time} segundos ✌️</p>`
                 document.getElementById("reset").style.display = "inline";
                 winAudio.play();
             }
