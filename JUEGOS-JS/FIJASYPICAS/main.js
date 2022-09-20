@@ -27,6 +27,7 @@ let wrongAudio = new Audio('./sounds/wrong.wav');
 // let testBox = document.getElementById("testBox");
 let startButton = document.getElementById("startButton");
 let surrenderButton = document.getElementById("surrenderButton");
+let resetButton = document.getElementById("resetButton");
 let evaluateButton = document.getElementById("evaluateButton");
 
 let numberPanel = document.getElementById("numberPanel");
@@ -44,7 +45,7 @@ function selected(id) {
 }
 
 window.onload = () => {
-    startButton.focus();
+    startButton.focus();    
 }
 
 addEventListener("keydown", (event) => {
@@ -60,7 +61,7 @@ addEventListener("keydown", (event) => {
 
 
 
-addEventListener("keydown", (event) => {
+addEventListener("keypress", (event) => {
     if (event.key == "Enter") {
         return false;
     }    
@@ -95,8 +96,8 @@ document.addEventListener("keydown", (event) => {
 
 function start() {
 
-    startButton.style.transform = "translateX(-1600px)";
-    surrenderButton.style.transform = "translateX(32px)";
+    surrenderButton.style.transform = "translateX(-70px)";
+    startButton.style.transform = "translateX(-1235px)";    
     evaluateButton.style.display = "inline";
     numberPanel.style.display = "inline";
     document.getElementById("num1").focus();
@@ -120,11 +121,13 @@ function start() {
 }
 
 function surrender() {
-
+    
     surrenderButton.style.transform = "translateX(-1200px)";
-    resetButton.style.transform = "translateX(-175px)";
-    evaluateButton.style.display = "none";
+    resetButton.style.display = "inline";
+    resetButton.style.transform = "translateX(-172px)";
+
     numberPanel.style.display = "none";
+    evaluateButton.style.display = "none";
 
     document.getElementById("secretNum1").innerText = numeroAdivinarArray[0];
     document.getElementById("secretNum2").innerText = numeroAdivinarArray[1];

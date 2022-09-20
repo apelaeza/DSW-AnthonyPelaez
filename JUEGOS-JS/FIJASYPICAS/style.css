@@ -22,13 +22,10 @@ body {
     overflow: hidden;
 }
 
-/* .actions{
-    position: relative;
-} */
 
 #startButton {
-    transition: 1.5s;
-    transform: translateX(205px);    
+    transition: 1.5s;    
+    transform: translateX(100px);    
 }
 
 #surrenderButton {
@@ -38,23 +35,21 @@ body {
 }
 
 #resetButton {
+    display: none;
     width: 200px;
-    transition: 1s;
-    transform: translateX(1600px);    
+    transition: 2s;    
 }
-
-/* #button:hover{
-    transform: translateX(-1000px);
-} */
 
 .secretNumber span {
     font-size: 120px !important;
     border-bottom: 5px solid aliceblue;
     margin: 0 20px 0;
+    transition: 4s;    
 }
 
 .numberPanel{
     display: none;
+    transition: 4s;    
 }
 
 .candidateNumbers {
@@ -84,6 +79,12 @@ body {
     color: red;
 }
 
+table{
+    margin: auto;
+    max-width: 500px;
+    transition: 1s;    
+}
+
 footer {
     text-align: center;
     margin-bottom: 50px;
@@ -97,4 +98,18 @@ a {
 
 a:hover {
     color: burlywood !important;
+}
+
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 100%;
+        min-width: 600px;        
+        margin: 30px auto 10px;
+    }
+    .secretNumber span {
+        font-size: 80px !important;
+        margin: 0 10px 0;
+    }
 }
