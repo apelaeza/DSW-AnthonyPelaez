@@ -26,20 +26,23 @@
         </div>
 
         <div class="row actions">
-            <div class="col" >
-                <button type="button" class="btn btn-primary btn-lg" onclick="start()" id="startButton">¡Comenzar!</button>
-                <button type="button" class="btn btn-danger btn-lg" onclick="surrender()" id="surrenderButton">🏳&nbsp&nbsp Rendirse&nbsp&nbsp 🏳</button>
-                <button type="button" class="btn btn-success btn-lg" onclick="reset()" id="resetButton">Volver a empezar</button>
+            <div class="col">
+                <button type="button" class="btn btn-primary btn-lg" onclick="start()"
+                    id="startButton">¡Comenzar!</button>
+                <button type="button" class="btn btn-danger btn-lg" onclick="surrender()"
+                    id="surrenderButton">🏳&nbsp&nbsp Rendirse&nbsp&nbsp 🏳</button>
+                <button type="button" class="btn btn-success btn-lg" onclick="reset()" id="resetButton">Volver a
+                    empezar</button>
             </div>
-            
-                
-            
+
+
+
         </div>
 
-        <div class="row">
-            <div class="col mt-2" id="testBox">                
+        <!-- <div class="row">
+            <div class="col mt-2" id="testBox">
             </div>
-        </div>
+        </div> -->
 
         <div class="row">
             <div class="col secretNumber mt-5 mb-5">
@@ -56,24 +59,24 @@
                     <h1>Ingresa números</h1>
                 </div>
                 <div class="candidateNumbers">
-                    <input type="text" value="" maxlength="1" id="num1" onblur="checkIntNumber(id)">
-                    <input type="text" value="" maxlength="1" id="num2" onblur="checkIntNumber(id)">
-                    <input type="text" value="" maxlength="1" id="num3" onblur="checkIntNumber(id)">
-                    <input type="text" value="" maxlength="1" id="num4" onblur="checkIntNumber(id)">
+                    <input type="text" value="" maxlength="1" id="num1" onfocus="selected(id)">
+                    <input type="text" value="" maxlength="1" id="num2" onfocus="selected(id)">
+                    <input type="text" value="" maxlength="1" id="num3" onfocus="selected(id)">
+                    <input type="text" value="" maxlength="1" id="num4" onfocus="selected(id)">
                     <img src="./images/arrow-button.svg" alt="" onclick="evaluateCandidateNumber()" id="evaluateButton">
                 </div>
 
-                <div class="row" id="alert">                    
+                <div class="row" id="alert">
                 </div>
             </div>
 
             <div class="col dataTable">
                 <table class="table table-striped table-dark">
-                    <thead id="thead">                      
+                    <thead id="thead">
                     </thead>
-                    <tbody id="tbody">                                          
+                    <tbody id="tbody">
                     </tbody>
-                  </table>
+                </table>
             </div>
         </div>
 

@@ -1,3 +1,5 @@
+"use strict";
+
 //variables
 
 
@@ -9,7 +11,7 @@ let num1 = 0;
 let num2 = 0;
 let num3 = 0;
 let num4 = 0;
-let numSelected = 0;
+let numSelected = 1;
 let lastNumSelected = false;
 
 //audios
@@ -22,14 +24,13 @@ let wrongAudio = new Audio('./sounds/wrong.wav');
 
 //Elementos DOM
 
-let testBox = document.getElementById("testBox");
+// let testBox = document.getElementById("testBox");
 let startButton = document.getElementById("startButton");
 let surrenderButton = document.getElementById("surrenderButton");
 let evaluateButton = document.getElementById("evaluateButton");
 
 let numberPanel = document.getElementById("numberPanel");
 let alert = document.getElementById("alert");
-
 
 let tbody = document.getElementById("tbody");
 let thead = document.getElementById("thead");
@@ -38,65 +39,53 @@ let thead = document.getElementById("thead");
 
 //FUNCIONES
 
+function selected(id) {
+    numSelected = id.slice(3);
+}
+
 window.onload = () => {
     startButton.focus();
 }
 
-document.getElementById("num1").onfocus = function () {
-    numSelected = 1;
-}
-
-document.getElementById("num2").onfocus = function () {
-    numSelected = 2;
-}
-
-document.getElementById("num3").onfocus = function () {
-    numSelected = 3;
-}
-
-function validateInt(num) {
-    if (isNaN(num)) {
-        return ""
-    } else {
-        return num
-    }
-}
-
-function checkIntNumber(id) {
-
-    intValidated = validateInt(document.getElementById(id).value)
-    if (intValidated == "") {
-        if (numSelected != 1) {
-            alert.innerHTML = `<p>Valor no válido. Ingresa solo números</p>`;
-            setTimeout(function () {
-                alert.innerHTML = '';
-            }, 1500);
+addEventListener("keydown", (event) => {
+    
+    if (event.key == "Backspace" && document.getElementById("num" + (numSelected)).value == '') {
+        if (numSelected > 1) {
+            document.getElementById("num" + (numSelected - 1)).focus();
+            // numSelected--;
         }
-
-        document.getElementById(id).select()
-        document.getElementById(id).focus()
-    } else
-        document.getElementById(id).value = intValidated
-}
-
-document.addEventListener("keyup", (event) => {
-    if (event.key != "Enter") {
-        document.getElementById("num" + (numSelected + 1)).focus();
+        return false;
     }
-
 })
 
 
 
-//Funcionalidad ENTER
+addEventListener("keypress", (event) => {
+    if (event.key == "Enter") {
+        return false;
+    }    
+    event.preventDefault();
+    let key = event.key;
+    let parsed = parseInt(key);    
+    if (parsed >= 0) {
+        document.getElementById("num" + (numSelected)).value = parsed;
+        numSelected < 4 ? numSelected++ : numSelected;
+        document.getElementById("num" + (numSelected)).focus();
+    }
+})
+
+
+
+// Funcionalidad ENTER
 
 document.getElementById("num4").onfocus = function () {
+    numSelected = 4;
     lastNumSelected = true;
 }
 
 document.addEventListener("keydown", (event) => {
     if (event.key == "Enter" && lastNumSelected) {
-        numSelected = 0;
+        numSelected = 1;
         document.getElementById("num1").focus();
         evaluateCandidateNumber();
     }
@@ -126,7 +115,7 @@ function start() {
     }
     while (hasDuplicates(numeroAdivinarArray) && numeroAdivinarArray !== [9, 8, 7, 6])
 
-    testBox.innerHTML = numeroAdivinarArray; // Probando que funcione el número
+    // testBox.innerHTML = numeroAdivinarArray; // Probando que funcione el número
 
 }
 
@@ -137,13 +126,12 @@ function surrender() {
     evaluateButton.style.display = "none";
     numberPanel.style.display = "none";
 
-
     document.getElementById("secretNum1").innerText = numeroAdivinarArray[0];
     document.getElementById("secretNum2").innerText = numeroAdivinarArray[1];
     document.getElementById("secretNum3").innerText = numeroAdivinarArray[2];
     document.getElementById("secretNum4").innerText = numeroAdivinarArray[3];
 
-
+    resetButton.focus();
 }
 
 
