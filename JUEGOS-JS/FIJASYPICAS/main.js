@@ -60,7 +60,7 @@ addEventListener("keydown", (event) => {
 
 
 
-addEventListener("keyup", (event) => {
+addEventListener("keydown", (event) => {
     if (event.key == "Enter") {
         return false;
     }    
