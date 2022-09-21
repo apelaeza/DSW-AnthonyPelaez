@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <main class="container mt-lg-5">
+    <main class="container mt-4">
         <div class="row">
             <div class="col title mb-1">
                 <h1>FIJAS Y PICAS</h1>
@@ -21,7 +21,7 @@
 
         <div class="row mb-5">
             <div class="col rules" id="rules">
-                <p>Reglas</p>
+                <span onclick="rules()" id="rulesButton">Reglas</span>
             </div>
         </div>
 
@@ -34,9 +34,6 @@
                 <button type="button" class="btn btn-success btn-lg" onclick="reset()" id="resetButton">Volver a
                     empezar</button>
             </div>
-
-
-
         </div>
 
         <!-- <div class="row">
@@ -53,7 +50,7 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="row gamePanel">
             <div class="col numberPanel" id="numberPanel">
                 <div class="row">
                     <h1>Ingresa números</h1>
@@ -80,15 +77,207 @@
             </div>
         </div>
 
+        <div class="reglas">
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <div class="row">
+                        <h3>Este es un juego en el que te enfrentarás a una Mente Maestra. ¿Podrás superarla? </h3>
+                        <p>
+                            La Mente Maestra pensará un número de 4 dígitos y tú tendrás que adivinarlo. Este número
+                            tiene
+                            la
+                            particularidad de que sus dígitos no se repiten entre sí.
+                        </p>
+                        <p>Seguro lo entenderás mejor con algunos ejemplos.</p>
+                        <p>
+                            Los números <span>5 6 4 0</span> – <span>7 8 9 1</span> – <span>3 2 6 4</span> – <span>0 1 8
+                                3</span>
+                            <strong>son todos válidos</strong> , pues como verás, sus dígitos se
+                            encuentran una sola vez. Por otra parte, números como <span>5 6 6 3</span> – <span>0 1 0
+                                9</span> –
+                            <span>2 7 2 7</span> – <span>8 3 9 3</span> <strong>no son
+                                válidos</strong>, por tanto, la Mente Maestra jamás pensará un número secreto con esta
+                            composición.
+                        </p>
+                        <p> Ahora veamos cómo podrás adivinar el número secreto.</p>
+                        <p>
+                            En el panel de ingreso de números, podrás escribir candidatos con las mismas reglas que usa
+                            la
+                            Mente
+                            Maestra para pensar su número. Recuerda, se trata de un número de 4 dígitos los cuales no se
+                            repiten
+                            entre sí.
+                            Una vez registres tu número candidato, se lo enviarás a la Mente Maestra y esta te devolverá
+                            el
+                            número
+                            con dos pistas. Te dirá la cantidad de <strong>fijas</strong> y la cantidad de <strong>picas</strong> que tiene tu número
+                            respecto
+                            al
+                            número secreto.
+                        </p>
+                        <p>
+                        <h2>¿Qué son Fijas y qué son Picas?</h2>
+                        </p>
+                        <h6>
+                            Es importante que tengas claro qué significa cada una, pues solo de esta forma podrás
+                            descifrar
+                            el
+                            número secreto.
+                        </h6>
+                        <h4>Fijas:</h4> <br>
+                        <p> Una fija es cuando uno de los dígitos de tu número candidato, coincide con la misma posición
+                            del
+                            número
+                            secreto. Cuando lanzas tu número candidato puedes recibir cinco respuestas respecto a las
+                            fijas.
+                            A
+                            saber, cero, una, dos, tres fijas o la que constituye el objetivo del juego, cuatro fijas.
+                            “Cuatro
+                            fijas” quiere decir que has descifrado el número de la Mente Maestra. Veamos algunos
+                            ejemplos en
+                            la
+                            siguiente imagen:
+                        </p>
+                        <div class="col">
+                            <img src="./images/ejemploFijas.png" alt="">
+                        </div>
+                        <div class="col">
+                            <p>
+                                El número secreto es 7042; si lanzas el número candidato 8149, la pista de respuesta
+                                será
+                                “Una
+                                fija”
+                                pues solo uno de los dígitos coincide con los dígitos del número secreto y además se
+                                encuentra
+                                en la
+                                misma posición. Si miras bien en el número candidato, el tercer dígito es 4 el cual
+                                también
+                                se
+                                encuentra en la tercera posición del número secreto. 
+                                 <br> 
+                                 <br> 
+                                 
+                                 En el segundo caso, el candidato                                 
+                                7932,
+                                tiene en
+                                la primera posición el 7 y en la última posición, el 2, números que también coinciden en
+                                la
+                                misma
+                                posición del número secreto, por tanto, la pista será “dos fijas”. 
+                                <br>
+                                <br>
+                                En un tercer ejemplo,
+                                vemos
+                                cómo
+                                el candidato tiene la pista “tres fijas” pues verás que contiene el 7, el 0 y el 2 todos
+                                en
+                                las
+                                mismas posiciones que el número secreto.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h4>Picas:</h4> <br>
+                        <p>
+                            Una pica es cuando uno de los dígitos de tu número candidato se encuentra en el número de la
+                            Mente
+                            Maestra, pero en una posición diferente. De la misma forma que ocurre con las fijas, existen
+                            cinco
+                            casos
+                            diferentes. Tu número candidato puede recibir como pista, cero, una, dos, tres y hasta
+                            cuatro
+                            picas.
+                            Veamos algunos ejemplos en la siguiente imagen para entender mejor el concepto de Picas:
+                        </p>
+
+                        <div class="col">
+                            <img src="./images/ejemploPicas.png" alt="">
+                        </div>
+                        <div class="col">
+                            <p>
+                                En el primer caso, tenemos el dígito 4 que también se encuentra en el número secreto,
+                                pero
+                                no en
+                                la
+                                misma posición. Esto devuelve la pista “una pica”. 
+                                <br>
+                                <br>
+                                En el segundo candidato tenemos dos
+                                dígitos
+                                que
+                                también se encuentran en el número secreto: el 7 y el 2, por tanto, la pista que nos
+                                dará la
+                                Mente
+                                Maestra será “dos picas”. 
+                                <br>
+                                <br>
+                                Y finalmente, nuestro tercer número candidato ha logrado
+                                atinarles
+                                a 3
+                                dígitos del número secreto, pero como se encuentran en diferentes posiciones, la
+                                respuesta
+                                será
+                                “tres picas”.
+                            </p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <p>
+                            Bueno, seguro te estarás preguntando si tu candidato puede tener fijas y picas al tiempo. Si
+                            es
+                            así,
+                            seguro podrás ganarle fácilmente a la Mente Maestra. La respuesta a esa pregunta es un
+                            rotundo
+                            sí.
+                            Claro, la pista de respuesta a tu número candidato puede ser cualquier combinación entre
+                            fijas y
+                            picas.
+                            Por supuesto, podrías recibir una pista como “cero picas y cero fijas”, o “Una fija y 3
+                            picas” y
+                            así
+                            sucesivamente.
+                            Como siempre, se entiende mejor con unos ejemplos, pero esta vez dejaré que tú los
+                            interpretes.
+                            Seguro
+                            lo sabrás hacer y así ya estarás listo para vencer a la Mente Maestra.
+                        </p>
+                        <img src="./images/ejemploFijasPicas.png" alt="">
+
+                        <h4>Estrategia:</h4> <br>
+                        <p>
+                            Puedes emplear cualquier estrategia que se te ocurra para descifrar el número de la Mente
+                            Maestra,
+                            pero
+                            para ayudarte a sentar una base lógica, voy a darte la más importante de las claves                            
+                            para
+                            lograr el objetivo: “Nunca crees números candidatos cuyos dígitos se repitan en la misma
+                            posición
+                            siempre”. En otras palabras, aprovecha cada candidato para definir la posición de cada
+                            dígito.
+                        </p>
+                        <h3>
+                            ¡Buena suerte!
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="col-2" id="col3"> <button type="button" class="btn-close btn-close-white" aria-label="Close" onclick="closeRules()"></button> </div>
+            </div>
+        </div>
+
+        <footer id="footer">
+            Juego programado por 👨‍💻 Anthony Peláez
+            <p>
+                <a href="https://www.svgbackgrounds.com/" target="_blank">Fondo</a> -
+                <a href="https://sfbgames.itch.io/chiptone" target="_blank">Sonidos</a> -
+                <a href="https://www.flaticon.es/packs/retro-videogame?word=videogames" target="_blank">Íconos</a>
+            </p>
+        </footer>
     </main>
-    <footer>
-        Juego programado por 👨‍💻 Anthony Peláez
-        <p>
-            <a href="https://www.svgbackgrounds.com/" target="_blank">Fondo</a> -
-            <a href="https://sfbgames.itch.io/chiptone" target="_blank">Sonidos</a> -
-            <a href="https://www.flaticon.es/packs/retro-videogame?word=videogames" target="_blank">Íconos</a>
-        </p>
-    </footer>
+
+
     <script src="main.js"></script>
 </body>
 

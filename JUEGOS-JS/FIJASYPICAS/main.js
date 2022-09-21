@@ -45,11 +45,11 @@ function selected(id) {
 }
 
 window.onload = () => {
-    startButton.focus();    
+    startButton.focus();
 }
 
 addEventListener("keydown", (event) => {
-    
+
     if (event.key == "Backspace" && document.getElementById("num" + (numSelected)).value == '') {
         if (numSelected > 1) {
             document.getElementById("num" + (numSelected - 1)).focus();
@@ -64,10 +64,10 @@ addEventListener("keydown", (event) => {
 addEventListener("keypress", (event) => {
     if (event.key == "Enter") {
         return false;
-    }    
+    }
     event.preventDefault();
     let key = event.key;
-    let parsed = parseInt(key);    
+    let parsed = parseInt(key);
     if (parsed >= 0) {
         document.getElementById("num" + (numSelected)).value = parsed;
         numSelected < 4 ? numSelected++ : numSelected;
@@ -97,7 +97,7 @@ document.addEventListener("keydown", (event) => {
 function start() {
 
     surrenderButton.style.transform = "translateX(-70px)";
-    startButton.style.transform = "translateX(-1235px)";    
+    startButton.style.transform = "translateX(-1235px)";
     evaluateButton.style.display = "inline";
     numberPanel.style.display = "inline";
     document.getElementById("num1").focus();
@@ -121,7 +121,7 @@ function start() {
 }
 
 function surrender() {
-    
+
     surrenderButton.style.transform = "translateX(-1200px)";
     resetButton.style.display = "inline";
     resetButton.style.transform = "translateX(-172px)";
@@ -140,13 +140,10 @@ function surrender() {
 
 function evaluateCandidateNumber() {
 
-
-
     num1 = document.getElementById("num1").value;
     num2 = document.getElementById("num2").value;
     num3 = document.getElementById("num3").value;
     num4 = document.getElementById("num4").value;
-
 
     let candidateNumber = [];
 
@@ -155,9 +152,6 @@ function evaluateCandidateNumber() {
     candidateNumber.push(num3);
     candidateNumber.push(num4);
 
-    console.log(candidateNumber)
-    console.log("hay vacios?: " + (candidateNumber.indexOf('') + 1))
-
     if (candidateNumber.indexOf('') + 1 > 0) {
         alert.innerHTML = `<p>Número inválido. Recuerda que deben ser 4 dígitos no repetidos</p>`;
         setTimeout(function () {
@@ -165,17 +159,13 @@ function evaluateCandidateNumber() {
         }, 3000)
         return false
 
-    } else {
+    } else if (hasDuplicates(candidateNumber)) {
+        alert.innerHTML = `<p>Número inválido. Recuerda que deben ser 4 dígitos no repetidos</p>`;
+        setTimeout(function () {
+            alert.innerHTML = '';
+        }, 3000);
 
-
-
-        if (hasDuplicates(candidateNumber)) {
-            alert.innerHTML = `<p>Número inválido. Recuerda que deben ser 4 dígitos no repetidos</p>`;
-            setTimeout(function () {
-                alert.innerHTML = '';
-            }, 3000);
-            return false;
-        }
+        return false;
     }
 
     turn++;
@@ -252,4 +242,20 @@ function reset() {
         location.reload()
     }, 800);
 
+}
+
+function rules(){
+    document.querySelector(".reglas").style.display = "inline";
+    document.querySelector(".actions").style.display = "none";
+    document.querySelector(".secretNumber").style.display = "none";
+    document.querySelector(".gamePanel").style.display = "none";
+    document.getElementById("footer").style.transform = "translateY(600px)"
+}
+
+function closeRules(){
+    document.querySelector(".reglas").style.display = "none";
+    document.querySelector(".actions").style.display = "inline";
+    document.querySelector(".secretNumber").style.display = "inline";
+    document.querySelector(".gamePanel").style.display = "flex";
+    document.getElementById("footer").style.transform = "translateY(0px)"
 }
