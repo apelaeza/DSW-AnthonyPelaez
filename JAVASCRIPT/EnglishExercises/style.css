@@ -1,0 +1,17 @@
+.list-group-item{
+    min-width: 100px;
+}
+.info{
+    max-width: 370px;
+}
+.playButton{
+    width:20px;
+}
+
+.liPlayButton{
+    border: none !important;
+    cursor: pointer;
+}
+.liCheckBox{
+    min-width:50px !important;
+}

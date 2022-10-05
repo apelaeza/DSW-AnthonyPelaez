@@ -1,0 +1,48 @@
+{
+  "dialogs": [
+    {
+      "type": "series",
+      "name": "House of Cards",
+      "season": "1",
+      "chapter": "1",
+      "minute": "2:52",
+      "actors": [
+        {
+          "name": "Kevin Spacey",
+          "gender": "man"
+        }
+      ],
+      "lines": [
+        {
+          "person": 1,
+          "text": "Linda Vasquez, Walker's Chief of Staff."
+          
+        },
+        {
+          "person": 1,
+          "text": "I got her hired"
+        },
+        {
+          "person": 1,
+          "text": "She's a woman, check, and a latina, check, but more important than that, she's as tough as a two-dollar steak. Check, check, check."
+        },
+        {
+          "person": 1,
+          "text": "When it comes to the white house, you not only need the keys in your back pocket, you need the gatekeeper."
+        },
+        {
+          "person": 1,
+          "text": "As for me, I'm just  a lowly house mayority whip. I keep things moving in a congress choked by pettiness and lassitude."
+        },
+        {
+          "person": 1,
+          "text": "My job is to clear the pipes and keep the sludge moving."
+        },
+        {
+          "person": 1,
+          "text": "But I won't have to be a plumber much longer. I've done my time. I backed the right man. Give and take. Welcome to Washington."
+        }
+      ]
+    }
+  ]
+}
