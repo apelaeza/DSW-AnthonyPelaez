@@ -1,0 +1,60 @@
+.list-group-item {
+    min-width: 100px;
+}
+
+.container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+    width: 400px;
+}
+
+.next {
+    position: relative;
+    height: 125px !important;
+    width: 50px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select:none;
+
+}
+
+
+.nextButton {
+    width: 25px;
+    height: 25px;
+}
+
+.card {
+    margin: auto;
+}
+
+.card-subtitle {
+    color: brown;
+}
+
+.card img {
+    width: 15px;
+    height: 15px;
+}
+
+.carousel-container {
+    width: 80% !important;
+    user-select: none;
+}
+
+
+@media screen and (min-width:1200px) {
+    .carousel-container {
+        width: 50% !important;
+        height: 200px !important;
+    }
+}

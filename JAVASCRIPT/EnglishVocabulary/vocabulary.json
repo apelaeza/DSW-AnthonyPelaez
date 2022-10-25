@@ -1,0 +1,748 @@
+{
+  "vocabulary": [
+    {
+      "id": 1,
+      "word": "absent-minded"
+      },
+      {
+      "id": 2,
+      "word": "affectionate"
+      },
+      {
+      "id": 3,
+      "word": "agreeable"
+      },
+      {
+      "id": 4,
+      "word": "ambitious"
+      },
+      {
+      "id": 5,
+      "word": "amused"
+      },
+      {
+      "id": 6,
+      "word": "angry"
+      },
+      {
+      "id": 7,
+      "word": "annoyed"
+      },
+      {
+      "id": 8,
+      "word": "anxious"
+      },
+      {
+      "id": 9,
+      "word": "applicable"
+      },
+      {
+      "id": 10,
+      "word": "appropriate"
+      },
+      {
+      "id": 11,
+      "word": "argumentative"
+      },
+      {
+      "id": 12,
+      "word": "arrogant"
+      },
+      {
+      "id": 13,
+      "word": "artistic"
+      },
+      {
+      "id": 14,
+      "word": "ashamed"
+      },
+      {
+      "id": 15,
+      "word": "attractive"
+      },
+      {
+      "id": 16,
+      "word": "authentic"
+      },
+      {
+      "id": 17,
+      "word": "bad"
+      },
+      {
+      "id": 18,
+      "word": "bad-tempered"
+      },
+      {
+      "id": 19,
+      "word": "big"
+      },
+      {
+      "id": 20,
+      "word": "bitter"
+      },
+      {
+      "id": 21,
+      "word": "bland"
+      },
+      {
+      "id": 22,
+      "word": "blunt"
+      },
+      {
+      "id": 23,
+      "word": "bored"
+      },
+      {
+      "id": 24,
+      "word": "boring"
+      },
+      {
+      "id": 25,
+      "word": "bossy"
+      },
+      {
+      "id": 26,
+      "word": "brave"
+      },
+      {
+      "id": 27,
+      "word": "bright"
+      },
+      {
+      "id": 28,
+      "word": "bumpy"
+      },
+      {
+      "id": 29,
+      "word": "calm"
+      },
+      {
+      "id": 30,
+      "word": "careful"
+      },
+      {
+      "id": 31,
+      "word": "cautious"
+      },
+      {
+      "id": 32,
+      "word": "charismatic"
+      },
+      {
+      "id": 33,
+      "word": "charming"
+      },
+      {
+      "id": 34,
+      "word": "chatty"
+      },
+      {
+      "id": 35,
+      "word": "cheap"
+      },
+      {
+      "id": 36,
+      "word": "cheerful"
+      },
+      {
+      "id": 37,
+      "word": "clean"
+      },
+      {
+      "id": 38,
+      "word": "clear"
+      },
+      {
+      "id": 39,
+      "word": "clever"
+      },
+      {
+      "id": 40,
+      "word": "closed"
+      },
+      {
+      "id": 41,
+      "word": "clumsy"
+      },
+      {
+      "id": 42,
+      "word": "cold"
+      },
+      {
+      "id": 43,
+      "word": "comfortable"
+      },
+      {
+      "id": 44,
+      "word": "confident"
+      },
+      {
+      "id": 45,
+      "word": "confused"
+      },
+      {
+      "id": 46,
+      "word": "correct"
+      },
+      {
+      "id": 47,
+      "word": "creative"
+      },
+      {
+      "id": 48,
+      "word": "crispy"
+      },
+      {
+      "id": 49,
+      "word": "cruel"
+      },
+      {
+      "id": 50,
+      "word": "daring"
+      },
+      {
+      "id": 51,
+      "word": "dark"
+      },
+      {
+      "id": 52,
+      "word": "deep"
+      },
+      {
+      "id": 53,
+      "word": "delicious"
+      },
+      {
+      "id": 54,
+      "word": "difficult"
+      },
+      {
+      "id": 55,
+      "word": "dirty"
+      },
+      {
+      "id": 56,
+      "word": "discouraged"
+      },
+      {
+      "id": 57,
+      "word": "disorganized"
+      },
+      {
+      "id": 58,
+      "word": "early"
+      },
+      {
+      "id": 59,
+      "word": "easy"
+      },
+      {
+      "id": 60,
+      "word": "easy-going"
+      },
+      {
+      "id": 61,
+      "word": "elegant"
+      },
+      {
+      "id": 62,
+      "word": "embarrassed"
+      },
+      {
+      "id": 63,
+      "word": "excited"
+      },
+      {
+      "id": 64,
+      "word": "expensive"
+      },
+      {
+      "id": 65,
+      "word": "fantastic"
+      },
+      {
+      "id": 66,
+      "word": "far"
+      },
+      {
+      "id": 67,
+      "word": "fat"
+      },
+      {
+      "id": 68,
+      "word": "fattening"
+      },
+      {
+      "id": 69,
+      "word": "favorite"
+      },
+      {
+      "id": 70,
+      "word": "filthy"
+      },
+      {
+      "id": 71,
+      "word": "fit"
+      },
+      {
+      "id": 72,
+      "word": "free"
+      },
+      {
+      "id": 73,
+      "word": "fresh"
+      },
+      {
+      "id": 74,
+      "word": "fried"
+      },
+      {
+      "id": 75,
+      "word": "friendly"
+      },
+      {
+      "id": 76,
+      "word": "full"
+      },
+      {
+      "id": 77,
+      "word": "fun"
+      },
+      {
+      "id": 78,
+      "word": "funny"
+      },
+      {
+      "id": 79,
+      "word": "fussy"
+      },
+      {
+      "id": 80,
+      "word": "generous"
+      },
+      {
+      "id": 81,
+      "word": "giving"
+      },
+      {
+      "id": 82,
+      "word": "good"
+      },
+      {
+      "id": 83,
+      "word": "good-looking"
+      },
+      {
+      "id": 84,
+      "word": "gorgeous"
+      },
+      {
+      "id": 85,
+      "word": "grateful"
+      },
+      {
+      "id": 86,
+      "word": "greasy"
+      },
+      {
+      "id": 87,
+      "word": "grumpy"
+      },
+      {
+      "id": 88,
+      "word": "handsome"
+      },
+      {
+      "id": 89,
+      "word": "happy"
+      },
+      {
+      "id": 90,
+      "word": "hard"
+      },
+      {
+      "id": 91,
+      "word": "hard-working"
+      },
+      {
+      "id": 92,
+      "word": "healthy"
+      },
+      {
+      "id": 93,
+      "word": "heavy"
+      },
+      {
+      "id": 94,
+      "word": "helpful"
+      },
+      {
+      "id": 95,
+      "word": "hollow"
+      },
+      {
+      "id": 96,
+      "word": "honest"
+      },
+      {
+      "id": 97,
+      "word": "horrible"
+      },
+      {
+      "id": 98,
+      "word": "hot"
+      },
+      {
+      "id": 99,
+      "word": "humble"
+      },
+      {
+      "id": 100,
+      "word": "hungry"
+      },
+      {
+      "id": 101,
+      "word": "ignorant"
+      },
+      {
+      "id": 102,
+      "word": "illuminated"
+      },
+      {
+      "id": 103,
+      "word": "imaginative"
+      },
+      {
+      "id": 104,
+      "word": "impatient"
+      },
+      {
+      "id": 105,
+      "word": "important"
+      },
+      {
+      "id": 106,
+      "word": "intelligent"
+      },
+      {
+      "id": 107,
+      "word": "interesting"
+      },
+      {
+      "id": 108,
+      "word": "jealous"
+      },
+      {
+      "id": 109,
+      "word": "juicy"
+      },
+      {
+      "id": 110,
+      "word": "kind"
+      },
+      {
+      "id": 111,
+      "word": "late"
+      },
+      {
+      "id": 112,
+      "word": "light"
+      },
+      {
+      "id": 113,
+      "word": "lively"
+      },
+      {
+      "id": 114,
+      "word": "long"
+      },
+      {
+      "id": 115,
+      "word": "loyal"
+      },
+      {
+      "id": 116,
+      "word": "mild"
+      },
+      {
+      "id": 117,
+      "word": "moody"
+      },
+      {
+      "id": 118,
+      "word": "naughty"
+      },
+      {
+      "id": 119,
+      "word": "near"
+      },
+      {
+      "id": 120,
+      "word": "nice"
+      },
+      {
+      "id": 121,
+      "word": "occupied"
+      },
+      {
+      "id": 122,
+      "word": "old"
+      },
+      {
+      "id": 123,
+      "word": "outraged"
+      },
+      {
+      "id": 124,
+      "word": "patient"
+      },
+      {
+      "id": 125,
+      "word": "picky"
+      },
+      {
+      "id": 126,
+      "word": "polite"
+      },
+      {
+      "id": 127,
+      "word": "pregnant"
+      },
+      {
+      "id": 128,
+      "word": "prepared"
+      },
+      {
+      "id": 129,
+      "word": "proud"
+      },
+      {
+      "id": 130,
+      "word": "raw"
+      },
+      {
+      "id": 131,
+      "word": "ready"
+      },
+      {
+      "id": 132,
+      "word": "reliable"
+      },
+      {
+      "id": 133,
+      "word": "restless"
+      },
+      {
+      "id": 134,
+      "word": "rich"
+      },
+      {
+      "id": 135,
+      "word": "ripe"
+      },
+      {
+      "id": 136,
+      "word": "rough"
+      },
+      {
+      "id": 137,
+      "word": "rude"
+      },
+      {
+      "id": 138,
+      "word": "sad"
+      },
+      {
+      "id": 139,
+      "word": "safe"
+      },
+      {
+      "id": 140,
+      "word": "salty"
+      },
+      {
+      "id": 141,
+      "word": "savoury"
+      },
+      {
+      "id": 142,
+      "word": "selfish"
+      },
+      {
+      "id": 143,
+      "word": "shallow"
+      },
+      {
+      "id": 144,
+      "word": "sharp"
+      },
+      {
+      "id": 145,
+      "word": "short"
+      },
+      {
+      "id": 146,
+      "word": "sick"
+      },
+      {
+      "id": 147,
+      "word": "sickly-sweet"
+      },
+      {
+      "id": 148,
+      "word": "sleepy"
+      },
+      {
+      "id": 149,
+      "word": "slippery"
+      },
+      {
+      "id": 150,
+      "word": "small"
+      },
+      {
+      "id": 151,
+      "word": "smooth"
+      },
+      {
+      "id": 152,
+      "word": "sociable"
+      },
+      {
+      "id": 153,
+      "word": "soft"
+      },
+      {
+      "id": 154,
+      "word": "solid"
+      },
+      {
+      "id": 155,
+      "word": "sour"
+      },
+      {
+      "id": 156,
+      "word": "special"
+      },
+      {
+      "id": 157,
+      "word": "spent"
+      },
+      {
+      "id": 158,
+      "word": "spicy"
+      },
+      {
+      "id": 159,
+      "word": "spoilt"
+      },
+      {
+      "id": 160,
+      "word": "stale"
+      },
+      {
+      "id": 161,
+      "word": "stingy"
+      },
+      {
+      "id": 162,
+      "word": "stubborn"
+      },
+      {
+      "id": 163,
+      "word": "stupid"
+      },
+      {
+      "id": 164,
+      "word": "sweet"
+      },
+      {
+      "id": 165,
+      "word": "sweet"
+      },
+      {
+      "id": 166,
+      "word": "talkative"
+      },
+      {
+      "id": 167,
+      "word": "tall"
+      },
+      {
+      "id": 168,
+      "word": "tender"
+      },
+      {
+      "id": 169,
+      "word": "thick"
+      },
+      {
+      "id": 170,
+      "word": "thin"
+      },
+      {
+      "id": 171,
+      "word": "thirsty"
+      },
+      {
+      "id": 172,
+      "word": "thoughtful"
+      },
+      {
+      "id": 173,
+      "word": "tiny"
+      },
+      {
+      "id": 174,
+      "word": "tired"
+      },
+      {
+      "id": 175,
+      "word": "tough"
+      },
+      {
+      "id": 176,
+      "word": "trustworthy"
+      },
+      {
+      "id": 177,
+      "word": "ugly"
+      },
+      {
+      "id": 178,
+      "word": "uncomfortable"
+      },
+      {
+      "id": 179,
+      "word": "unforgivable"
+      },
+      {
+      "id": 180,
+      "word": "unjust"
+      },
+      {
+      "id": 181,
+      "word": "upset"
+      },
+      {
+      "id": 182,
+      "word": "weak"
+      },
+      {
+      "id": 183,
+      "word": "wealthy"
+      },
+      {
+      "id": 184,
+      "word": "wide"
+      },
+      {
+      "id": 185,
+      "word": "written"
+      },
+      {
+      "id": 186,
+      "word": "young"
+      }
+  ]
+}
